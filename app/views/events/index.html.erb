@@ -4,8 +4,11 @@
 
   <% events.each do |event| %>
     <div>
+    <%= link_to event_path(event.id) do %>
       <%= event.title %>
+      <%= event.content %>
+      <% end%>
     </div>
   <% end %>
-  
+
 <% end %>

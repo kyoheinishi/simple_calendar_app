@@ -13,6 +13,11 @@ class EventsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @event = Event.find_by(id: params[:id])
+  end
+
+
   private
 
   def event_parameter
