@@ -1,1 +1,3 @@
 <p>コース: <%= @event.title %></p>
+
+<%= link_to '編集', edit_event_path(@event.id), method: :get %>
